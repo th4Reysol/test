@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    min-width: 1190px;
+    background-image: url(./images/forest.jpeg);
+    background-size: cover;
+}
+body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    min-width: 1190px;
+    background-color: lightgray;
+    opacity: 0.8;
+    z-index: -1;
+}
+h1{
+    color: blue;
+    font-weight: bold;
+    display: flex;
+    font-size: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px,20px;
+}
+
+header>nav>ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header>nav>ul>li{
+    display: inline-block;
+    margin-left: 25px;
+}
+header>nav>ul>li>a{
+    display: inline-block;
+    margin-left: 25px;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header>nav>ul>li>a:hover{
+    color: orange;
+    transition: all 0.3s;
+}
+
+
+a.contact{
+    display: block;
+    background-color: palegreen;
+    border-radius: 15px;
+    padding: 10px, 20px;
+    margin-right: 10px;   
+}
+#switch{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 250px;
+}
+
+section>p>span{
+    font-size: 35px;
+    text-decoration: underline;
+    margin-bottom: 60px;
+    color: black;
+}
+section>div>p{
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 10px, 20px;
+}
+
+main .button-area{
+    margin-top: 40px;
+    padding: 30px;
+}
+p.service{
+    font-size: 22px;
+    font-weight: 600;
+}
+.button-area>button{
+    font-size: 15px;
+    border: none;
+    background-color: lightblue;
+    font-weight: 500;
+    cursor: pointer;
+}
+.button-area>button>a{
+    text-decoration: none;
+    font-size: 25px;
+}
+.button-area>button>a:hover{
+    color: orange;
+    transition: all 0.3s;
+}
+
+.button-area .free{
+    margin-right: 20px;
+}
+
+/* マウスポインタ */
+#cursor{
+    pointer-events: none;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    position: fixed;
+    top: -16px;
+    left: -16px;
+    border-radius: 50px;
+    transition: 0.01s;
+}
+
+/* === radio部分を消去 ================== */
+#switch input[type="radio"]{
+    display    : none;
+}
+   
+/* === 各ラジオボタンのラベルをボタンに変更 == */
+#switch label{
+    border     : 1px solid #ccc;
+    box-shadow : 2px 2px #999;
+    padding    : 2px 6px;
+    border-style: groove;   
+}
+   
+/* === 選択されている言語のラベル色を変更 ==== */
+#switch input[type="radio"]:checked + label {
+    background : orange;
+}
+

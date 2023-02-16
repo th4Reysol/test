@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Let Me Help You</title>
+</head>
+<body>
+    <header class="container langChg" lang="ja">
+        <h1 class="langChg" lang="ja">お任せください！</h1>
+        <nav>
+            <ul>
+                <li><a href="#">コンセプト</a></li>
+                <li><a href="#">サービス</a></li>
+                <li><a href="#" class="contact">お問い合わせ</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <header class="container langChg" lang="en">
+        <h1 class="lngChg" lang="en">Let Me Help You!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" class="contact">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <div id="switch">
+        <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')" checked>
+        <label for="sJa">
+            <span class="langCng" lang="ja">日本語</span>
+            <span class="langCng" lang="en">Japanese</span>
+        </label>
+        
+        <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')">
+        <label for="sEn">
+            <span class="langCng" lang="ja">英語</span>
+            <span class="langCng" lang="en">English</span>
+        </label>
+    </div>
+    <main>
+        <section class="lngChg" lang="ja">
+            <p><span>「何でも助ける!」がテーマのサービスです。</span></p>
+            <div>
+                <p>プログラマー、翻訳者、コンサルタントのサービスを主軸にクライアントへの奉仕活動をしております。</p>
+                <p>「ウェブアプリが必要だ・・・」、「英語の資料作成が不安だ・・・」、「営業戦略に自信がない・・・」</p>
+                <p>このような状況の解決に、弊社サービスをご利用ください!</p>
+            <div class="button-area">
+                <button class="free"><a href="#">資料請求</a></button>
+                <button class="free"><a href="#">お問い合わせ</a></button>
+            </div>
+        </section>
+        <section class="lngChg" lang="ja">
+            <p><span>弊社では次のサービスを受け付けています。</span></p>
+            <div>
+                <p class="service">ウェブサイト、ウェブアプリケーションの開発</p>
+                <p>言語: HTML, CSS, JavaScript, Python, Go言語</p>
+                <p>要件定義から保守運用まで全ての工程を扱っております。他の開発言語も取り扱っておりますので是非ご活用ください。</p>
+                <p class="service">日英仏翻訳サービス</p>
+                <p>MicroSoft Officeを使用した資料、提案書の翻訳</p>
+                <p>日本語・英語・フランス語の翻訳を受け付けております。</p>
+                <p class="service">コンサルタントサービス</p>
+                <p>まだ駆け出しではありますが、満足いただける提案・アドバイスを致します。</p>
+                <p>主に法人向けのサービス推進を専門としております。もちろん他の分野においても同様のサービスをお約束します。</p>
+            <div class="button-area">
+                <button class="free"><a href="#">資料請求</a></button>
+                <button class="free"><a href="#">お問い合わせ</a></button>
+            </div>
+        </section>
+    </main>
+    <div id="cursor"></div>
+    <script src="script.js"></script>
+</body>
+</html>
