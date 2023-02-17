@@ -35,7 +35,6 @@ h1{
 .container{
     display: flex;
     justify-content: space-between;
-    padding: 5px,20px;
 }
 
 header>nav>ul{
@@ -171,3 +170,111 @@ p.service{
     background : orange;
 }
 
+/* モバイル用 */
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    
+    h1{
+        color: blue;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .container{
+        display: inline;
+        padding: 5px,20px;
+    }
+    header>nav{
+        display: inline;
+    }
+    
+    header>nav>ul>li>a{
+        color: black;
+        font-size: 5px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    header>nav>ul>li>a:hover{
+        color: orange;
+        transition: all 0.3s;
+    }
+    
+    
+    a.contact{
+        display: inline;
+        background-color: palegreen;
+        border-radius: 15px;
+        padding: 10px, 20px;
+        margin-right: 10px;   
+    }
+    #switch{
+        float: inline-start;
+        justify-content: flex-start;
+        list-style: none;;
+        font-size: 4px;
+    }
+    
+    
+    main{
+
+        text-align: center;
+        white-space: nowrap;
+        margin-top: 150px;
+    }
+    
+    section{
+        margin-top: 25px;
+    }
+    
+    section>p>span{
+        font-size: 10px;
+        text-decoration: underline;
+        color: black;
+    }
+    section>div>p{
+        font-size: 5px;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        padding: 10px, 20px;
+    }
+    section>div>p.service{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    
+    main .button-area{
+        margin-top: 40px;
+        padding: 30px;
+    }
+    p.service{
+        font-size: 6px;
+        font-weight: 600;
+    }
+    .button-area>button{
+        border: none;
+        background-color: orange;
+        font-weight: 800;
+        border-radius: 30px;
+        cursor: pointer;
+        
+    }
+    .button-area>button>a{
+        text-decoration: none;
+        color: white;
+        font-size: 5px;
+        text-align: center;
+        padding: 5px;
+    }
+    .button-area>button>a:hover{
+        color: blue;
+        transition: all 0.3s;
+    }
+    
+    .button-area .free{
+        margin-right: 15px;
+    }
+    
+}
