@@ -18,7 +18,7 @@ body::after{
     position: absolute;
     top: 0;
     left: 0;
-    height: 200%;
+    height: 350%;
     width: 100%;
     min-width: 1190px;
     background-color: lightgray;
@@ -72,17 +72,14 @@ a.contact{
     display: flex;
     justify-content: flex-end;
     font-size: 12px;
+    margin-bottom: 35px;
 }
 
 
 main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     white-space: nowrap;
-    margin-top: 400px;
+    margin: 0,auto;
 }
 
 section{
@@ -105,6 +102,17 @@ section>div>p.service{
     margin-top: 40px;
     margin-bottom: 10px;
 }
+
+section>div>dl>dt{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+p.lastPhrase{
+    font-weight: 700;
+    margin-top: 20px;
+}
+
 
 
 main .button-area{
@@ -185,7 +193,8 @@ p.service{
         padding: 5px,20px;
     }
     header>nav{
-        display: inline;
+        display: flex;
+        flex-direction: column;
     }
     
     header>nav>ul>li>a{
@@ -213,45 +222,38 @@ p.service{
         justify-content: flex-start;
         list-style: none;;
         font-size: 4px;
+        margin-top: 5px;
     }
-    
     
     main{
-
-        text-align: center;
+        text-align: unset;
         white-space: nowrap;
-        margin-top: 150px;
+        margin: 0,auto;
     }
     
-    section{
-        margin-top: 25px;
-    }
     
     section>p>span{
-        font-size: 10px;
+        font-size: 16px;
         text-decoration: underline;
         color: black;
+        margin-bottom: 5px;
     }
     section>div>p{
-        font-size: 5px;
+        margin-top: 5px;
+        font-size: 3px;
         font-weight: 600;
-        margin-top: 25px;
-        margin-bottom: 10px;
         padding: 10px, 20px;
     }
     section>div>p.service{
-        margin-top: 0px;
-        margin-bottom: 10px;
+        font-size: 8px;
+        margin-top:15px;
+        margin-bottom: 15px;
     }
     
     
     main .button-area{
         margin-top: 40px;
         padding: 30px;
-    }
-    p.service{
-        font-size: 6px;
-        font-weight: 600;
     }
     .button-area>button{
         border: none;

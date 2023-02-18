@@ -13,9 +13,9 @@
         <h1>お任せください！</h1>
         <nav>
             <ul>
-                <li><a href="#">コンセプト</a></li>
-                <li><a href="#">サービス</a></li>
-                <li><a href="#" class="contact">お問い合わせ</a></li> 
+                <li><a href="#ourConcept_ja">コンセプト</a></li>
+                <li><a href="#ourService_ja">サービス</a></li>
+                <li><a href="#contact_ja" class="contact">お問い合わせ</a></li> 
             </ul>
         </nav>
     </header>
@@ -23,9 +23,9 @@
         <h1>Let Me Help You!</h1>
         <nav>
             <ul>
-                <li><a href="#">Concept</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#" class="contact">Contact</a></li> 
+                <li><a href="#ourConcept_en">Concept</a></li>
+                <li><a href="#ourService_en">Services</a></li>
+                <li><a href="#contact_en" class="contact">Contact</a></li> 
             </ul>
         </nav>
     </header>
@@ -43,7 +43,7 @@
         </label>
     </div>
     <main>
-        <section class="langCng" lang="ja">
+        <section id="ourConcept_ja" class="langCng" lang="ja">
             <p><span>「何でも助ける!」がテーマのサービスです。</span></p>
             <div>
                 <p>プログラマー、翻訳、コンサルタントのサービスを主軸にクライアントへの奉仕活動をしております。</p>
@@ -54,7 +54,7 @@
                 <button class="free"><a href="#">お問い合わせ</a></button>
             </div>
         </section>
-        <section class="langCng" lang="ja">
+        <section id="ourService_ja"class="langCng" lang="ja">
             <p><span>弊社では次のサービスを受け付けています。</span></p>
             <div>
                 <p class="service">ウェブサイト、ウェブアプリケーションの開発</p>
@@ -71,7 +71,45 @@
                 <button class="free"><a href="#">お問い合わせ</a></button>
             </div>
         </section>
-        <section class="langCng" lang="en">
+        <section id="contact_ja" class="langCng" lang="ja">
+            <p><span>資料請求・お問い合わせ</span></p>
+            <div>
+                <dl>
+                    <dt>お名前</dt>
+                    <dd><input type="text" placeholder="名前を入力してください。"></dd>
+                </dl>
+                <dl>
+                    <dt>メールアドレス</dt>
+                    <dd><input type="text" placeholder="testuser@gmail.com"></dd>
+                </dl>
+                <dl>
+                    <dt>お問い合わせ内容を選択してください</dt>
+                    <dd>
+                        <select name="request">
+                            <option label="サービス資料請求" value="サービス資料請求"></option>
+                            <option label="サービス見積依頼" value="サービス見積依頼"></option>
+                            <option label="その他" value="その他"></option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>詳細情報などございましたらご記載ください</dt>
+                    <dd>
+                        <textarea cols="60" rows="10" placeholder="例:ウェブ開発について相談したい"></textarea>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>以下のボタンを押せば完了です。</dt>
+                    <dd>
+                        <button type="submit">Submit</button>
+                    </dd>
+                </dl>
+            </div>
+            <p class="lastPhrase">貴社とご縁がありましたら幸いです。</p>
+        </section>
+
+
+        <section id="ourConcept_en" class="langCng" lang="en">
             <p><span>Our business concept is "to Help You with Everything"</span></p>
             <div>
                 <p>We mainly give you programming, translation, and consulting services.</p>
@@ -84,7 +122,7 @@
                 <button class="free"><a href="#">Contact</a></button>
             </div>
         </section>
-        <section class="langCng" lang="en">
+        <section id="ourService_en" class="langCng" lang="en">
             <p><span>We are professional service providers!</span></p>
             <div>
                 <p class="service">Programming for web pages and applications</p>
@@ -104,6 +142,42 @@
                 <button class="free"><a href="#">Request for documents</a></button>
                 <button class="free"><a href="#">Contact</a></button>
             </div>
+        </section>
+        <section id="contact_en" class="langCng" lang="en">
+            <p><span>Request/Contact</span></p>
+            <div>
+                <dl>
+                    <dt>Your Name</dt>
+                    <dd><input type="text" placeholder="Input your name."></dd>
+                </dl>
+                <dl>
+                    <dt>Mail Address</dt>
+                    <dd><input type="text" placeholder="testuser@gmail.com"></dd>
+                </dl>
+                <dl>
+                    <dt>Choose a Request</dt>
+                    <dd>
+                        <select name="request">
+                            <option label="Request for service documents" value="Request for service documents"></option>
+                            <option label="Request for estimates for our service" value="Request for estimates for our service"></option>
+                            <option label="Other" value="Other"></option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Input details on your request if you have</dt>
+                    <dd>
+                        <textarea cols="60" rows="10" placeholder="e.g. I want to know more about our services"></textarea>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>You can submit the below button</dt>
+                    <dd>
+                        <button type="submit">Submit</button>
+                    </dd>
+                </dl>
+            </div>
+            <p class="lastPhrase">It would be our pleasure to serve you through this page!</p>
         </section>
     </main>
     <div id="cursor"></div>
